@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">✨ Professional CV Maker</h1>
+        
+        <form id="cvForm" class="cv-form">
+            <div class="form-row">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-row">
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="location" placeholder="Location" required>
+            </div>
+
+            <textarea id="summary" placeholder="Professional Summary" rows="4" required></textarea>
+            <input type="text" id="skills" placeholder="Skills (comma separated)" required>
+            <textarea id="education" placeholder="Education Details" rows="3" required></textarea>
+            <textarea id="experience" placeholder="Work Experience" rows="5" required></textarea>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn generate-btn">Generate CV</button>
+                <button type="button" class="btn print-btn" id="printBtn">Print CV</button>
+            </div>
+        </form>
+
+        <div id="cvOutput" class="cv-output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
